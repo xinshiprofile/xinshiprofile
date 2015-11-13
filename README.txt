@@ -1,69 +1,48 @@
-Eventually by HTML5 UP
+Twenty by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-Just a simple placeholder template for your kickass app/product/startup/whatever until it
-launches. Includes an email signup form and a cool slideshow background (more on both below).
+This is Twenty, a minimal, multi-page responsive site template for HTML5 UP.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+As the name implies, this is my twentieth (!) design for HTML5 UP. Since the last
+few have been single page affairs, I decided to go with something a bit more conventional
+and threw in four extra page layouts. Beyond that, it's the usual drill: fully responsive,
+built on HTML5/CSS3/skel, and CCA licensed like all my other stuff. Sass sources are
+also included for those of you into that sort of thing (entirely optional).
 
-(* = not included)
+Special thanks to Michael Domaradzki (md.photomerchant.net) for allowing me to use
+his excellent photos in Twenty's demo*.
+
+(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
+and/or use any of Michael's work without his explicit permission!)
 
 AJ
 n33.co @n33co dribbble.com/n33
 
-
-Signup Form:
-
-	The signup form won't actually do anything (other than report back with a "thank you" message)
-	until you tie it to either a third party service (eg. MailChimp) or your own hosted solution.
-	In either case, there are two ways to go:
-
-	1. The conventional (non-AJAX) way, which pretty much comes down to pointing the form's "action"
-	attribute to your service/script URL. If you go this route, remove the entire "Signup Form" code
-	block from assets/js/main.js (since it's not needed for this approach).
-
-	-or-
-
-	2. The AJAX way. How you set this up is largely dependent on the service/solution you're using
-	so you'll need to consult their/its documentation. However, I have included some basic code
-	(under "Signup Form" in assets/js/main.js) that will at least let you interact with the
-	form itself.
-
-
-Slideshow Background:
-
-	This is pretty straightforward, but there are two JS settings you'll want to be aware of
-	(found under "Slideshow Background" in assets/js/main.js):
-
-	images
-
-		The list of images to cycle through, given in the following format:
-
-			'url': 'alignment'
-
-		Where 'url' is the image (eg. 'images/foo.jpg', 'http://somewhere.else/foo.jpg'), and
-		'alignment' is how the image should be vertically aligned ('top', 'center', or 'bottom').
-
-		Note: Browsers that don't support CSS transitions (like IE<=9) will only see the first image.
-
-	delay
-
-		How long to wait between transitions (in ms). Note that this must be at least twice as long as
-		the transition speed itself (currently 3 seconds).
+PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
 
 
 Credits:
 
 	Demo Images:
-		Unsplash (unsplash.com)
+		Michael Domaradzki (md.photomerchant.net)
+			"Night Vision"
+			"At the Station II"
+			"Airchitecture II"
+			"Livewires II"
+			"Midnite Xpress I"
 
 	Icons:
 		Font Awesome (fortawesome.github.com/Font-Awesome)
 
 	Other:
+		jQuery (jquery.com)
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		CSS3 Pie (css3pie.com)
+		background-size polyfill (github.com/louisremi)
 		Respond.js (j.mp/respondjs)
+		jquery.dropotron (n33.co)
+		jquery.scrolly (n33.co)
+		jquery.scrollgress (n33.co)
 		Skel (skel.io)
