@@ -88,7 +88,7 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Javascript learnings</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>Using the HTML5 references to draw graphics via scripting (usually JavaScript).</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
@@ -119,23 +119,95 @@
 								</section>
 								<section>
 									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Steps</h3>
+									<p><!DOCTYPE html>
+									   <html>
+									   <body>
+									   <canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+									   Your browser does not support the HTML5 canvas tag.</canvas>
+									   <script>
+										var c = document.getElementById("myCanvas");
+										var ctx = c.getContext("2d");
+										var size = 20;
+										for(var i = 0; i < 10; i=i+1) {
+										    ctx.fillStyle="blue";
+										    ctx.fillRect(size*i, size*i, size, size);  
+										}
+									   </script>
+									   </body>
+									   </html>
+									</p>
 								</section>
 								<section>
 									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Cross shape</h3>
+									<p><!DOCTYPE html>
+										<html>
+										<body>
+										<canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+										Your browser does not support the HTML5 canvas tag.</canvas>
+										<script>
+											var c = document.getElementById("myCanvas");
+											var ctx = c.getContext("2d");
+											var size = 20;
+											for(var i = 0; i < 10; i=i+1) {
+											ctx.fillRect(180-(size*i), size*i, size, size);
+											ctx.fillRect(180-(size*i), 180-(size*i), size, size);	
+											}
+										</script>
+										</body>
+										</html>
+									</p>
 								</section>
 								<section>
 									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Colorful borders</h3>
+									<p><!DOCTYPE html>
+										<html>
+										<body>
+										<canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+										Your browser does not support the HTML5 canvas tag.</canvas>
+										<script>
+											var c = document.getElementById("myCanvas");
+											var ctx = c.getContext("2d");
+											var size = 20;
+											for(var i = 0; i < 10; i=i+1) {
+											    ctx.fillStyle="blue";
+											    ctx.fillRect(size*2*i,0,size,size);
+											ctx.fillStyle="aqua";
+											  ctx.fillRect(0,size*2*i,size,size);
+											ctx.fillStyle="gold";
+											  ctx.fillRect(size*2*i,180,size,size);
+											ctx.fillStyle="purple";
+											  ctx.fillRect(180,size*2*i,size,size);
+												
+											}
+										</script>
+										</body>
+										</html>
+									</p>
 								</section>
 								<section>
 									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>V shape</h3>
+									<p><!DOCTYPE html>
+										<html>
+										<body>
+										<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+										Your browser does not support the HTML5 canvas tag.</canvas>
+										<script>
+											var c = document.getElementById("myCanvas");
+											var ctx = c.getContext("2d");
+											var size=20;
+											for(var i = 0; i < 5; i=i+1) {
+											     ctx.fillStyle="blue";
+											    ctx.fillRect(size*i, size*i, size, size);
+											    ctx.fillRect(180-(size*i), size*i, size, size); 
+											}
+										</script>
+										</body>
+										</html>
+									</p>
 								</section>
 								<section>
 									<span class="icon major fa-diamond"></span>
