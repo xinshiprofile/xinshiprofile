@@ -87,13 +87,35 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
+							<h2>Javascript learnings</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Chess board</h3>
+									<p><!DOCTYPE html>
+										<html>
+											<body>
+											<canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+											Your browser does not support the HTML5 canvas tag.</canvas>
+											<script>
+												var c = document.getElementById("myCanvas");
+												var ctx = c.getContext("2d");
+												var size = 20;
+												for(var i = 0; i < 10; i=i+2) {
+												  for(var j = 0; j < 10; j=j+2){
+												    ctx.fillStyle="blue";
+												    ctx.fillRect(size*j, size*i, size, size);
+												    ctx.fillRect(size*(i+1), size*(j+1), size, size);
+												    ctx.fillStyle="pink";
+												    ctx.fillRect(size*(j+1), size*i, size, size);
+												    ctx.fillRect(size*(i), size*(j+1), size, size);
+												  }
+												}
+											</script>
+											</body>
+										</html>
+									</p>
 								</section>
 								<section>
 									<span class="icon major fa-lock"></span>
