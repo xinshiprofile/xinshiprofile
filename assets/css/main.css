@@ -3534,7 +3534,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background:;<!--#312450-->
+		background:rgb(192,192,192);<!--#312450-->
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3747,7 +3747,7 @@
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: black;<!--rgba(255, 255, 255, 0.35)-->
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3791,7 +3791,7 @@
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: black;<!--#ffffff;-->
 			}
 
 				#sidebar nav a.active:after {
